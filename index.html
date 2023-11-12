@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Font Demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link href="./assets/css/animate.min.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide w-full h-screen" id="slide-1">
+          <div
+            class="w-full h-screen bg-white float-left flex items-center flex-col overflow-auto"
+          >
+            <div
+              class="w-full h-full float-left max-w-7xl px-10 my-20 xl:px-24 flex flex-col justify-between"
+            >
+              <div class="w-full float-left">
+                <p class="text-[#1D1D1F] font-bold text-[92px] leading-[100px]">
+                  Standardizing <br /><span class="text-[#6E6E73]"
+                    >wati’s product </span
+                  ><br />Font Stack*
+                </p>
+              </div>
+              <div class="w-full float-left mt-12">
+                <p class="text-base text-[#6E6E73]">
+                  ** A font stack is an ordered list of fonts that<br />
+                  contains a primary font and an optional fallback font<br />
+                  or fonts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide w-full h-screen" id="slide-2">
+          <div
+            class="w-full min-h-screen float-left bg-white flex items-center justify-center px-10 py-10 xl:px-24"
+          >
+            <img
+              class="animate__animated"
+              src="./assets/images/poppins.png"
+              alt="Poppins"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide w-full h-screen" id="slide-3">
+          <div
+            class="w-full h-screen bg-white float-left flex items-center flex-col overflow-auto"
+          >
+            <div class="w-full float-left max-w-7xl px-10 mt-20 xl:px-24">
+              <div class="w-full float-left">
+                <h2 class="font-bold text-[#1D1D1F] text-[32px]">Poppins</h2>
+                <p class="text-[#424242] font-medium text-xl">
+                  Designed by
+                  <span class="underline underline-offset-[5px]"
+                    >Indian Type Foundry</span
+                  >, <br /><span class="underline underline-offset-[5px]"
+                    >Jonny Pinhorn</span
+                  >
+                </p>
+              </div>
+              <div class="w-full float-left mt-12">
+                <img class="" src="./assets/images/slide-2-img.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide w-full h-screen" id="slide-4">
+          <div
+            class="w-full h-screen bg-white float-left flex items-start flex-col overflow-auto"
+          >
+            <div class="w-full float-left max-w-7xl px-10 my-20 xl:px-24">
+              <div
+                class="w-full float-left max-w-[920px] h-[570px] bg-[#F5F5F5]"
+              ></div>
+              <div class="w-full float-left mt-8">
+                <p class="text-[#6E6E73] font-medium text-xl">
+                  In addition to "Poppins," we use 5
+                  <span class="text-[#1E1E1D]">other <br />font families</span>
+                  for no valid reasons in our code base.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/jquery-ui.js"></script>
+  <!-- Swiper JS -->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var audio = new Audio("./assets/audio/audio-sample.mp3");
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: false,
+      speed: 400,
+      allowTouchMove: false,
+      keyboard: {
+        enabled: true,
+      },
+      parallax: true,
+      on: {
+        slideChange: function (swiper) {
+          if (swiper.activeIndex !== 1) {
+            if (
+              $("#slide-2 .animate__animated").hasClass("animate__jackInTheBox")
+            ) {
+              $("#slide-2 .animate__animated").removeClass(
+                "animate__jackInTheBox"
+              );
+            }
+            //audio.play();
+          } else {
+            if (
+              !$("#slide-2 .animate__animated").hasClass(
+                "animate__jackInTheBox"
+              )
+            ) {
+              $("#slide-2 .animate__animated").addClass(
+                "animate__jackInTheBox"
+              );
+            }
+            // audio.pause();
+            //audio.currentTime = 0;
+          }
+        },
+      },
+    });
+  </script>
+</html>

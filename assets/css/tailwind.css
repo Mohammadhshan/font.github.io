@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'gt_zirkon_regular';
+    src: url('../fonts/gt-zirkon-regular-webfont.eot');
+    src: url('../fonts/gt-zirkon-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-zirkon-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gt-zirkon-regular-webfont.woff') format('woff'),
+         url('../fonts/gt-zirkon-regular-webfont.ttf') format('truetype'),
+         url('../fonts/gt-zirkon-regular-webfont.svg#gt_zirkon_trialrg') format('svg');
+   font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.zirkon-regular{
+    font-family: 'gt_zirkon_regular', sans-serif; 
+}
