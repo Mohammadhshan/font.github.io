@@ -1,4 +1,4 @@
-$(window).load(function(){
+window.addEventListener("load", (event) => {
 var audio = new Audio('./assets/audio/trash-sound.mp3');
 
 var swiper = new Swiper(".mySwiper", {
