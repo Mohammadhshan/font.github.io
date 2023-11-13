@@ -1,3 +1,4 @@
+$(window).load(function(){
 var audio = new Audio('./assets/audio/trash-sound.mp3');
 
 var swiper = new Swiper(".mySwiper", {
@@ -45,7 +46,7 @@ $(document).on("change","#font-toggle", function(){
     }
 });
 
-$( function() {
+
     $( "#fw-slider-1" ).slider({
         value: 400,
         step: 1,
