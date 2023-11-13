@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: false,
     speed: 400,
     allowTouchMove: false,
-    initialSlide: 7,
+    initialSlide: 0,
     keyboard: {
     enabled: true,
     },
