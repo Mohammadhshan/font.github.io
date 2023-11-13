@@ -31,41 +31,4 @@ a:focus {
   border-radius: 0px !important;
   outline: none !important;
 }
-
-.nested-swiper-container .swiper-slide {
-  z-index: 0;
-  opacity: 1 !important;
-}
-
-.nested-swiper-container .swiper-slide p {
-  color: rgba(29, 29, 31, 0.2);
-}
-
-.nested-swiper-container .swiper-slide-active {
-  z-index: 1;
-}
-
-.nested-swiper-container .swiper-slide-active p {
-  color: #1D1D1F;
-}
-
-.font-toggle-items h2 {
-  font-family: 'Inter', sans-serif;
-}
-
-.font-toggle-items .inbox-outfit {
-  display: none;
-}
-
-.font-toggle-items.font-toggle-3-outfit h2 {
-  font-family: 'Outfit', sans-serif;
-}
-
-.font-toggle-items.font-toggle-3-outfit .inbox-inter {
-  display: none;
-}
-
-.font-toggle-items.font-toggle-3-outfit .inbox-outfit {
-  display: block;
-}
 /*# sourceMappingURL=main.css.map */

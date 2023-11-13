@@ -1,4 +1,4 @@
-var audio = new Audio('/assets/audio/trash-sound.mp3');
+var audio = new Audio('./assets/audio/trash-sound.mp3');
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -43,4 +43,29 @@ $(document).on("change","#font-toggle", function(){
             $(this).css("font-style","normal");
         });
     }
+});
+
+$( function() {
+    $( "#fw-slider-1" ).slider({
+        value: 400,
+        step: 1,
+        max: 900,
+        min: 400,
+        slide: function( event, ui ) {
+            $(".custom-font-text").each(function(){
+                $(this).css("font-weight",ui.value);    
+            });
+        }
+    });
+    $( "#lh-slider-1" ).slider({
+        value: 1.15,
+        step: 0.05,
+        max: 2,
+        min: 0.75,
+        slide: function( event, ui ) {
+            $(".custom-font-text").each(function(){
+                $(this).css("line-height",ui.value);    
+            });
+        }
+    });
 });

@@ -4,8 +4,6 @@
     <head>
         <title>Font Demo</title>
         <meta charset="utf-8">
-        <meta name="description" content="Appblocks">
-        <meta name="keywords" content="Appblocks, Neoito">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
@@ -283,18 +281,18 @@
 
     </div>
     <div class="swiper-slide w-full h-screen" id="slide-8">
-      <div class="w-full h-screen bg-white float-left overflow-auto">
+      <div class="w-full h-[calc(100vh-132px)] bg-white float-left overflow-auto">
   <div class="w-full float-left max-w-7xl px-10 mt-10 xl:px-24">
-    <div class="w-full float-left flex space-x-10 items-start">
+    <div class="w-full float-left flex items-start space-x-10">
       <img src="./assets/images/brain.svg" class="flex-shrink-0 mt-12" />
-      <div class="max-w-5xl w-full float-left">
+      <div class="max-w-5xl w-full float-left overflow-hidden">
         <div
           class="w-full float-left h-12 px-10 before:content-[''] before:w-full before:float-left before:h-full before:border-dotted before:border-x before:border-[#F00]">
         </div>
         <div class="w-full float-left px-10 border-y border-dotted border-[#F00]">
           <div class="w-full float-left border-x border-dotted border-[#F00] relative">
-            <p style="line-height: 68px; font-weight: 400"
-              class="custom-font-text text-[#1D1D1F] text-xl font-poppins text-[60px]">
+            <p style="line-height: 1.15; font-weight: 400"
+              class="custom-font-text text-[#1D1D1F] font-poppins text-[60px]">
               “Look closely at the most <br />embarrassing details and
               <br />amplify them.” <br />— Brian Eno
             </p>
@@ -305,8 +303,8 @@
         </div>
         <div class="w-full float-left px-10 border-y border-dotted border-[#F00]">
           <div class="w-full float-left border-x border-dotted border-[#F00] relative">
-            <p style="line-height: 68px; font-weight: 400"
-              class="custom-font-text text-[#1D1D1F] text-xl font-poppins text-[60px] tracking-widest">
+            <p style="line-height: 1.15; font-weight: 400"
+              class="custom-font-text text-[#1D1D1F] font-poppins text-[60px] tracking-widest">
               $ % * # ₹ @
             </p>
           </div>
@@ -316,8 +314,8 @@
         </div>
         <div class="w-full float-left px-10 border-y border-dotted border-[#F00]">
           <div class="w-full float-left border-x border-dotted border-[#F00] relative">
-            <p style="line-height: 68px; font-weight: 400"
-              class="custom-font-text text-[#1D1D1F] text-xl font-poppins text-[60px] tracking-widest">
+            <p style="line-height: 1.15; font-weight: 400"
+              class="custom-font-text text-[#1D1D1F] font-poppins text-[60px] tracking-widest">
               1 2 3 4 5 6 7 8 9 10
             </p>
           </div>
@@ -325,20 +323,33 @@
         <div
           class="w-full float-left h-12 px-10 before:content-[''] before:w-full before:float-left before:h-full before:border-dotted before:border-x before:border-[#F00]">
         </div>
-        <div class="w-full float-left flex flex-wrap items-center mt-16 px-10">
-          <label class="switch-font bg-[#EFEFEF] rounded-full px-2.5 py-1 relative cursor-pointer">
-            <input id="font-toggle" class="hidden peer" type="checkbox">
-            <span
-              class="absolute top-1/2 transform -translate-y-1/2 left-2.5 z-0 bg-[#CDCDCD] rounded-full w-[60px] h-7 transition-all duration-200 peer-checked:left-[70px]"></span>
-            <span class="w-[60px] float-left h-7 relative z-10 flex items-center
-             justify-center  text-[#1D1D1F] text-xs">Regular</span>
-            <span class="w-[60px] h-7 float-left relative z-10 flex items-center
-            justify-center text-[#1D1D1F] text-xs">Italics</span>
-          </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full fixed bottom-0 left-0 py-10 bg-white">
+    <div class="w-full float-left max-w-7xl px-10 xl:px-24">
+      <div class="w-full float-left flex items-center pl-32 snap-x scroll-smooth overflow-auto">
+        <label
+          class="switch-font bg-[#EFEFEF] rounded-full px-2.5 py-1 relative cursor-pointer mr-8 flex-shrink-0 snap-center">
+          <input id="font-toggle" class="hidden peer" type="checkbox">
+          <span
+            class="absolute top-1/2 transform -translate-y-1/2 left-2.5 z-0 bg-[#CDCDCD] rounded-full w-[60px] h-7 transition-all duration-200 peer-checked:left-[70px]"></span>
+          <span class="w-[60px] float-left h-7 relative z-10 flex items-center
+       justify-center  text-[#1D1D1F] text-xs">Regular</span>
+          <span class="w-[60px] h-7 float-left relative z-10 flex items-center
+      justify-center text-[#1D1D1F] text-xs">Italics</span>
+        </label>
+        <div class="flex items-center space-x-3.5 mr-8 flex-shrink-0 snap-center">
+          <p class="text-[#1D1D1F] text-xs">Weight</p>
+          <div id="fw-slider-1" class="w-40 font-action-slider"></div>
+        </div>
+        <div class="flex items-center space-x-3.5 flex-shrink-0 snap-center">
+          <p class="text-[#1D1D1F] text-xs">Line-height</p>
+          <div id="lh-slider-1" class="w-40 font-action-slider"></div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
     </div>
