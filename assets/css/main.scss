@@ -32,3 +32,64 @@ a{
     }
   }
 }
+
+.nested-swiper-container{
+  .swiper-slide{
+    z-index: 0;
+    opacity: 1 !important;
+    p{
+      color: rgba(29, 29, 31, 0.2);
+    }
+  }
+  .swiper-slide-active{
+    z-index: 1;
+    p{
+      color: #1D1D1F;
+    }
+  }
+}
+
+// .font-toggle-items{
+//   // h2{
+//   //   font-family: 'Inter', sans-serif;
+//   // }
+//   .inbox-outfit{
+//     display: none;
+//   }
+//   &.font-toggle-3-outfit{
+//     // h2{
+//     //   font-family: 'Outfit', sans-serif;
+//     // }
+//     .inbox-inter{
+//       display: none;
+//     }
+//     .inbox-outfit{
+//       display: block;
+//     }
+//   }
+// }
+.switch-font{
+  &.active-font-mac{
+    .font-slider-selection{
+      left: 10px;
+    }
+  }
+  &.active-font-windows{
+    .font-slider-selection{
+      left: 94px;
+    }
+  }
+  &.active-font-linux{
+    .font-slider-selection{
+      left: 178px;
+    }
+  }
+  &.active-font-android{
+    .font-slider-selection{
+      left: 262px;
+    }
+  }
+}
+.sysfont-prof{
+  display: none;
+}

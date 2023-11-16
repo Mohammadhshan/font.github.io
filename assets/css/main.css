@@ -31,4 +31,41 @@ a:focus {
   border-radius: 0px !important;
   outline: none !important;
 }
+
+.nested-swiper-container .swiper-slide {
+  z-index: 0;
+  opacity: 1 !important;
+}
+
+.nested-swiper-container .swiper-slide p {
+  color: rgba(29, 29, 31, 0.2);
+}
+
+.nested-swiper-container .swiper-slide-active {
+  z-index: 1;
+}
+
+.nested-swiper-container .swiper-slide-active p {
+  color: #1D1D1F;
+}
+
+.switch-font.active-font-mac .font-slider-selection {
+  left: 10px;
+}
+
+.switch-font.active-font-windows .font-slider-selection {
+  left: 94px;
+}
+
+.switch-font.active-font-linux .font-slider-selection {
+  left: 178px;
+}
+
+.switch-font.active-font-android .font-slider-selection {
+  left: 262px;
+}
+
+.sysfont-prof {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
