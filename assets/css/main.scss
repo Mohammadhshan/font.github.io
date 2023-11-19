@@ -90,6 +90,39 @@ a{
     }
   }
 }
-.sysfont-prof{
+
+.switch-spf{
+  &.active-pf-Intercom{
+    .font-slider-selection{
+      left: 10px;
+    }
+  }
+  &.active-pf-LinkedIn{
+    .font-slider-selection{
+      left: 94px;
+    }
+  }
+  &.active-pf-Atlassian{
+    .font-slider-selection{
+      left: 178px;
+    }
+  }
+  &.active-pf-Youtrack{
+    .font-slider-selection{
+      left: 262px;
+    }
+  }
+  &.active-pf-Github{
+    .font-slider-selection{
+      left: 346px;
+    }
+  }
+}
+.sysfont-prof,.pf-img{
+  display: none;
+}
+
+.bottom-toolbar{
+  height: 116px;
   display: none;
 }

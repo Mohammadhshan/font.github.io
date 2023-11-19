@@ -65,7 +65,32 @@ a:focus {
   left: 262px;
 }
 
-.sysfont-prof {
+.switch-spf.active-pf-Intercom .font-slider-selection {
+  left: 10px;
+}
+
+.switch-spf.active-pf-LinkedIn .font-slider-selection {
+  left: 94px;
+}
+
+.switch-spf.active-pf-Atlassian .font-slider-selection {
+  left: 178px;
+}
+
+.switch-spf.active-pf-Youtrack .font-slider-selection {
+  left: 262px;
+}
+
+.switch-spf.active-pf-Github .font-slider-selection {
+  left: 346px;
+}
+
+.sysfont-prof, .pf-img {
+  display: none;
+}
+
+.bottom-toolbar {
+  height: 116px;
   display: none;
 }
 /*# sourceMappingURL=main.css.map */
